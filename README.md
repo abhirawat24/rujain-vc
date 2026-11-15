@@ -54,13 +54,7 @@ Create production build:
 npm run build
 ```
 
-## Contact
 
-Rujain Travels Nainital
-
-Phone / WhatsApp: +91 9027046585
-
-Email: maliksadab841@gmail.com
 
 ## Developer
 
