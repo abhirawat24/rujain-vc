@@ -1,0 +1,85 @@
+
+@import "swiper/css";
+@import "swiper/css/navigation";
+@import "swiper/css/pagination";
+
+/* ==============================
+   Global Reset & Responsive Setup
+================================= */
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-height: 100%;
+  margin: 0;
+}
+
+html {
+  overflow-x: clip;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: clip;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Prevent media from exceeding screen width */
+
+img,
+video,
+iframe {
+  max-width: 100%;
+}
+
+/* ==============================
+   Custom Swiper Navigation Arrows
+================================= */
+
+.custom-swiper .swiper-button-next,
+.custom-swiper .swiper-button-prev {
+  color: rgba(255, 255, 255, 0.9) !important;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 12px 18px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.custom-swiper .swiper-button-next:hover,
+.custom-swiper .swiper-button-prev:hover {
+  background: rgba(0, 0, 0, 0.7);
+  transform: scale(1.1);
+}
+
+
+
+@media (max-width: 640px) {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  .custom-swiper .swiper-button-next,
+  .custom-swiper .swiper-button-prev {
+    padding: 8px 12px;
+  }
+}
+
+
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+  }
+}
