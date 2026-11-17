@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import HeroSection from "./components/HeroSection";
 import Vehicles from "./components/Vehicles";
 import Locations from "./components/Locations";
+import Location from "./components/Location";
 import Navbar from "./components/Navbar";
 import About from "./components/About";
 import Contact from "./components/Contact";
@@ -33,6 +34,7 @@ function App() {
         <Vehicles />
         <Locations />
         <About />
+        <Location />
         <Contact />
         <Footer />
       </div>
